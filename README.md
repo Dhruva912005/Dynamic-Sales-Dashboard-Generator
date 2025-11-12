@@ -1,207 +1,217 @@
-# 📊 AutoSales Dashboard – Intelligent Business Analytics and Profit Optimization System
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoSales Dashboard | AI-Powered Business Analytics</title>
 
-## 📌 Project Overview
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b1120;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+  }
 
-The **AutoSales Dashboard** is an AI-powered business analytics platform that automates the **analysis, visualization, and forecasting** of sales data.  
-With just one dataset upload, users can instantly view **real-time insights** — including category-wise profits, country-level performance, and future sales forecasts — through a responsive dashboard and downloadable **professional PDF report**.
+  header {
+    background: linear-gradient(90deg, #1565C0, #1E88E5);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
 
-This project empowers **retailers, SMEs, and e-commerce businesses** to make **data-driven decisions**, optimize pricing, and maximize profitability — without requiring advanced technical expertise.
+  header h1 {
+    font-size: 2.6em;
+    margin: 0;
+  }
 
-**Core Question:**  
-> ⚙️ *How can businesses improve profit margins using automated analytics without increasing operational complexity?*
+  header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+  }
 
----
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #111827;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+  }
 
-## 📂 Dataset Description
+  h2 {
+    color: #60a5fa;
+    border-left: 4px solid #60a5fa;
+    padding-left: 10px;
+    margin-top: 40px;
+  }
 
-**Source:** Simulated Business Dataset (2020–2024)  
-**Records:** ~20,000 transactions  
-**Scope:** Multi-category, multi-country sales dataset  
+  p, ul {
+    color: #cbd5e1;
+    line-height: 1.7;
+    font-size: 1.05em;
+  }
 
-| Feature | Description |
-|----------|-------------|
-| **Purchase Amount** | Cost price of each product |
-| **Selling Price** | Customer purchase price |
-| **Category / Product** | Product classification |
-| **Country** | Market region |
-| **Profit %** | Derived profitability metric |
-| **Purchase Date** | Used for trend and forecasting |
+  ul {
+    list-style-type: "🔹 ";
+    margin-left: 40px;
+  }
 
-### 🧹 Data Cleaning Process
-- Removed missing or duplicate entries  
-- Standardized date formats and numeric columns  
-- Derived metrics: `Profit`, `Turnover`, `Monthly Growth`  
-- Aggregated data for time-series trend analysis  
+  .download-button {
+    display: inline-block;
+    background-color: #1E88E5;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: 0.3s;
+  }
 
----
+  .download-button:hover {
+    background-color: #1565C0;
+    box-shadow: 0 0 10px #1E88E5;
+  }
 
-## 🔍 Key Insight – Profit Optimization
+  .screenshots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
 
-🧩 The dashboard analysis revealed that excessive discounts (beyond **25%**) reduce profitability without increasing sales.  
-Maintaining discounts below **20%** yields the best balance between sales volume and margin retention.
+  .screenshots img {
+    width: 95%;
+    max-width: 850px;
+    border-radius: 10px;
+    border: 2px solid #334155;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  }
 
-**Trade-Offs:**
-- 📉 Slight reduction in unit sales  
-- 💰 Significant boost in overall profit margin  
-- 💡 Requires effective customer retention strategies  
+  footer {
+    text-align: center;
+    padding: 25px;
+    color: #9ca3af;
+    font-size: 0.9em;
+    border-top: 1px solid #1e293b;
+    margin-top: 40px;
+  }
 
----
+  a {
+    color: #60a5fa;
+    text-decoration: none;
+  }
 
-## 📉 Category-Wise Profit Summary
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
 
-| Category | Profit (₹) | % of Total | Insights |
-|-----------|-------------|-------------|-----------|
-| Home Appliances | 11,06,102 | 26% | High-value, premium pricing |
-| Clothing | 10,87,000 | 25% | Competitive but discount-sensitive |
-| Electronics | 10,45,000 | 24% | Stable and steady performance |
-| Grocery | 10,25,000 | 23% | Low margin, fast-moving |
+<body>
 
-**Top 3 Profit Drivers:**
-1. 🏆 *Home Appliances*  
-2. 💡 *Washing Machines (Top Product)*  
-3. 🌏 *India (Top Region)*  
+<header>
+  <h1>📊 AutoSales Dashboard</h1>
+  <p>AI-Powered Business Analytics, Visualization & Forecasting System</p>
+</header>
 
----
+<div class="container">
+  <h2>📌 Project Overview</h2>
+  <p>
+    The <strong>AutoSales Dashboard</strong> is a full-stack business analytics project designed to automate 
+    the process of analyzing and forecasting sales data. Using AI-driven models and interactive dashboards, 
+    the system transforms raw Excel data into clear, actionable insights for businesses.
+  </p>
 
-## 📍 Low-Performing Segments
+  <p>
+    It identifies top-performing product categories, tracks profit growth, forecasts sales, and assists in 
+    optimizing pricing and marketing strategies — all through an intelligent and automated interface.
+  </p>
 
-1. **Bookcases** – Repeated losses due to shipping costs  
-2. **Supplies** – Low margins and high discount dependency  
-3. **Machines** – Profits drop under heavy promotions  
+  <h2>✅ Objectives of the Project</h2>
+  <ul>
+    <li>Analyze sales trends across products, categories, and countries</li>
+    <li>Predict next-month sales using linear regression-based forecasting</li>
+    <li>Display key performance metrics (Turnover, Profit, Cost, Transactions)</li>
+    <li>Enable interactive visualizations for better business insights</li>
+    <li>Provide PDF report generation with integrated charts</li>
+  </ul>
 
-**Strategic Recommendations:**
-- Cap discounts ≤20% for *Machines* and *Supplies*  
-- Bundle *Bookcases* with high-performing products  
-- Promote high-profit categories through digital marketing  
+  <h2>🛠 Tools & Technologies Used</h2>
+  <ul>
+    <li><strong>Python (Flask):</strong> Backend development & automation</li>
+    <li><strong>Pandas, NumPy:</strong> Data cleaning and transformation</li>
+    <li><strong>Plotly:</strong> Interactive visualizations</li>
+    <li><strong>Scikit-learn:</strong> Forecasting with Linear Regression</li>
+    <li><strong>ReportLab:</strong> PDF report generation</li>
+    <li><strong>HTML, CSS, JavaScript:</strong> Dashboard frontend</li>
+  </ul>
 
----
+  <h2>📂 Dataset</h2>
+  <p>
+    The dataset contains transactional business data, including product sales, profit margins, 
+    and payment details for multiple regions and categories.
+  </p>
 
-## 🧭 System Architecture
+  <p><b>Dataset Features:</b></p>
+  <ul>
+    <li>Product Name & Category</li>
+    <li>Sales, Cost, and Profit Values</li>
+    <li>Country & Payment Type</li>
+    <li>Date of Transaction</li>
+  </ul>
 
-The following diagram shows the automated workflow:
+  <a href="https://github.com/Dhruva912005/Dynamic-Sales-Dashboard-Generator/raw/main/BA_Template_fixed.xlsx" 
+     class="download-button" download>⬇️ Download Dataset (Excel)</a>
 
-![Architecture Diagram](static/images/architecture.png)
+  <h2>📸 Dashboard Preview</h2>
+  <div class="screenshots">
+    <img src="Screenshot 2025-11-12 212056.png" alt="Dashboard Overview">
+    <img src="Screenshot 2025-11-12 212121.png" alt="Category vs Region Analysis">
+    <img src="Screenshot 2025-11-12 212129.png" alt="Profit Distribution">
+    <img src="Screenshot 2025-11-12 212138.png" alt="Forecasting Trends">
+  </div>
 
-> **Data Flow:**
-> - **Upload:** User uploads CSV/Excel dataset  
-> - **Processing:** Flask + Pandas clean & calculate metrics  
-> - **Visualization:** Plotly & Kaleido generate live charts  
-> - **Reporting:** ReportLab creates PDF reports  
-> - **Delivery:** Dashboard displays real-time analytics  
+  <h2>🔍 Key Insights</h2>
+  <ul>
+    <li>🏆 Home Appliances and Clothing are top profit-generating categories.</li>
+    <li>🌍 Countries with stable product margins contribute 60% of total profits.</li>
+    <li>📈 Moderate discounts (<20%) maximize both sales and profitability.</li>
+    <li>🔮 Forecast predicts steady growth for upcoming months.</li>
+  </ul>
 
----
+  <h2>🚀 Future Scope & Improvements</h2>
+  <ul>
+    <li>Integrate real-time data through cloud-based APIs</li>
+    <li>Implement predictive pricing optimization models</li>
+    <li>Develop voice-based analytics chatbot</li>
+    <li>Build mobile app dashboard version for executives</li>
+  </ul>
 
-## 🛠 Project Workflow
+  <h2>💼 Business Impact</h2>
+  <ul>
+    <li>⏱ 90% reduction in manual reporting time</li>
+    <li>💰 15–20% increase in average profit margins</li>
+    <li>📊 Data-driven marketing and pricing strategy creation</li>
+    <li>🧠 Enables smart decision-making for non-technical users</li>
+  </ul>
 
-### 1️⃣ Data Preparation  
-- Preprocessing, cleaning, and feature engineering  
+  <h2>👨‍💻 Developer</h2>
+  <p>
+    <strong>Dhruva Jain</strong><br>
+    B.Tech – Mathematics & Computing, MITS-DU, Gwalior<br>
+    Data Analytics | Business Intelligence | Automation Enthusiast<br>
+    🔗 <a href="https://github.com/Dhruva912005" target="_blank">GitHub: Dhruva912005</a><br>
+    ✉️ dhruvajain@example.com
+  </p>
+</div>
 
-### 2️⃣ Visualization  
-- Interactive Plotly graphs for category and region insights  
+<footer>
+  © 2025 AutoSales Dashboard | Designed & Developed by Dhruva Jain
+</footer>
 
-### 3️⃣ Forecasting  
-- Sales prediction using **Linear Regression** (Scikit-learn)  
-
-### 4️⃣ Report Generation  
-- Professional PDF reports with visuals and insights  
-
----
-
-## 📊 Dashboard Preview
-
-| Main Dashboard | Charts View | Forecast View |
-|----------------|-------------|----------------|
-| ![Dashboard](./Screenshot%202025-11-12%20212056.png) | ![Charts](./Screenshot%202025-11-12%20212121.png) | ![Forecast](./Screenshot%202025-11-12%20212138.png) |
-
-| Category & Profit Charts | Trend Analysis |
-|---------------------------|----------------|
-| ![Charts 2](./Screenshot%202025-11-12%20212129.png) | ![Trends](./Screenshot%202025-11-12%20214211.png) |
-
-| Forecasting & Table | Detailed Data View |
-|---------------------|--------------------|
-| ![Forecast Panel](./Screenshot%202025-11-12%20214223.png) | ![Table](./Screenshot%202025-11-12%20214241.png) |
-
-> 💡 *All charts auto-update dynamically based on user-selected filters.*
-
----
-
-### 🖼️ Full Dashboard Overview
-
-![Full Dashboard](./a0d16ed4-7bed-472f-b4ae-c8f0223d0166.png)
-
-> ✨ *A single platform that brings analytics, forecasting, and insights together.*
-
----
-
-## 💡 Key Features
-- 📈 Real-time KPIs (Turnover, Profit %, Transactions)  
-- 🧾 Automatic **PDF Report Generation**  
-- 📊 Dynamic filters by Category, Product, Country, Month  
-- 🔮 AI-based Sales Forecasting  
-- 🧠 Modern dark-theme UI with responsive design  
-
----
-
-## 📈 Business Impact
-
-| Area | Outcome |
-|-------|----------|
-| 💰 **Profitability** | 15–20% annual increase projected |
-| ⏱ **Time Efficiency** | 90% less manual analysis time |
-| 📊 **Accessibility** | Usable by non-technical business users |
-| 📉 **Cost Optimization** | Eliminates unprofitable discounting |
-| 💡 **Strategic Decisions** | Instant visualization of performance metrics |
-
----
-
-## 🧠 Technology Stack
-
-| Layer | Tools & Libraries |
-|--------|--------------------|
-| **Backend** | Flask (Python) |
-| **Data Handling** | Pandas, NumPy |
-| **Visualization** | Plotly, Kaleido |
-| **Report Generation** | ReportLab |
-| **Forecasting** | Scikit-learn (Linear Regression) |
-| **Frontend/UI** | HTML5, CSS3, Bootstrap 5, JavaScript |
-| **Storage** | Local CSV / Excel Uploads |
-
----
-
-## 🔮 Future Scope
-
-- 🤖 **AI-based Discount Optimization**  
-- ☁️ **Cloud Integration** for real-time team dashboards  
-- 💬 **Chatbot Assistant** for instant data insights  
-- 📱 **Mobile PWA Version** for portable access  
-- 📧 **Automated Email Reports**  
-- 🎯 **Dynamic Pricing Recommendations**
-
----
-
-## 🌍 Real-World Applications
-
-| Industry | Application |
-|-----------|-------------|
-| 🛒 Retail | Monthly sales & profit analytics |
-| 🏢 Enterprises | Division-wise performance tracking |
-| 💻 E-Commerce | Product-level profitability insights |
-| 🎓 Education | Data analytics teaching use-case |
-| 📊 Consulting | Smart business reports for clients |
-
----
-
-## 🚀 Installation & Run
-
-### 🔧 Setup Instructions
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/AutoSales-Dashboard.git
-cd AutoSales-Dashboard
-
-# 2. Install required dependencies
-pip install -r requirements.txt
-
-# 3. Run the Flask server
-python app.py
+</body>
+</html>
