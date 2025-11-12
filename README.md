@@ -45,11 +45,7 @@
   <h3>🔍 Live Dataset Preview</h3>
   <p>View the dataset directly below without downloading:</p>
 
-  <!-- ✅ Live Excel Embed Preview -->
-  <iframe 
-    src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/Dhruva912005/Dynamic-Sales-Dashboard-Generator/raw/main/sales_template%20(4).xlsx" 
-    width="100%" height="600px" style="border:none; border-radius:8px;">
-  </iframe>
+  
 
   <h2>📸 Dashboard Preview</h2>
   <div class="screenshots">
@@ -65,7 +61,6 @@
     B.Tech – Mathematics & Computing, MITS-DU, Gwalior<br>
     Data Analytics | Business Intelligence | Automation Enthusiast<br>
     🔗 <a href="https://github.com/Dhruva912005" target="_blank">GitHub: Dhruva912005</a><br>
-    ✉️ dhruvajain@example.com
   </p>
 </div>
 
