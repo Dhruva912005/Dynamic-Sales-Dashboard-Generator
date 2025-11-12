@@ -42,10 +42,6 @@
      ⬇️ Download Dataset (Excel)
   </a>
 
-  <h3>🔍 Live Dataset Preview</h3>
-  <p>View the dataset directly below without downloading:</p>
-
-  
 
   <h2>📸 Dashboard Preview</h2>
   <div class="screenshots">
@@ -53,7 +49,19 @@
     <img src="Screenshot 2025-11-12 212121.png" alt="Category vs Region Analysis">
     <img src="Screenshot 2025-11-12 212129.png" alt="Profit Distribution Chart">
     <img src="Screenshot 2025-11-12 212138.png" alt="Sales Forecasting Visualization">
+
+    <!-- ✅ Added New Screenshot from GitHub -->
+    <img src="https://github.com/Dhruva912005/Dynamic-Sales-Dashboard-Generator/raw/main/Screenshot%202025-11-12%20234500.png" 
+         alt="Sales Performance Report Screenshot">
   </div>
+
+  <!-- ✅ Added PDF Report Download -->
+  <h2>📄 Final Sales Report</h2>
+  <p>You can view or download the automatically generated PDF report below:</p>
+  <a href="https://github.com/Dhruva912005/Dynamic-Sales-Dashboard-Generator/raw/main/Sales_Report%20(38).pdf" 
+     class="download-button" target="_blank">
+     📄 View Sales Performance Report (PDF)
+  </a>
 
   <h2>👨‍💻 Developer</h2>
   <p>
