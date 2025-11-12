@@ -1,0 +1,22 @@
+# -------------------- Flask Web Framework --------------------
+Flask==3.0.3
+
+# -------------------- Data Handling & Excel Support --------------------
+pandas==2.2.1
+openpyxl==3.1.5
+numpy==1.26.4
+
+# -------------------- Machine Learning --------------------
+scikit-learn==1.3.2
+
+# -------------------- PDF Generation & Visualization --------------------
+reportlab==4.2.5
+plotly==5.24.1
+kaleido==0.2.1
+
+# -------------------- Optional Fallback for Chart Rendering --------------------
+matplotlib==3.5.3
+kiwisolver==1.3.2
+
+# -------------------- General Utilities --------------------
+requests==2.31.0
